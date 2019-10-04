@@ -1,20 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>[Put Your Title Here]</title>
+<title>Homework 2</title>
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body> 
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                Homework 2
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-light">
+        <h2>Introduction</h2>
+        <p>
+                The importance of marketing in today’s capitalistic society is undebated. The key to successful marketing is simply 
+                understanding who the target market is. Therefore, there exists many strategies where the consumers tendencies can be evaluated. In fact, it
+                is difficult to identify a successful
+                marketing strategy because each every customer has different demands and there are often many different
+                features which affect customer behavior. Sometimes it seems like an impossible challenge with the innumerous variables
+                to take in to account- which is when visualization takest the wheel. This project deals with a dataset containing information from a Portugese bank’s direct
+                telemarketing campaign, which includes data about the customer and how the customer was contacted. The goal is to see which features could 
+                best be visualized in order to better ascertain how to get more people to invest in the bank itself. 
+    </section>
+
+    <div class="pimg2">
+            <div class="ptext">
+                <span class="border">
+                    Tableau Dashboard
+                </span>
+            </div>
+    </div>
+
     <div class="container">
-        <hr>
-        <h2>[Put Your Title Here]</h2>
-        [Embed your own Tableau a dashboard, Story Points, or annotated chart, for example:]
-        <div class='tableauPlaceholder' id='viz1568425440091' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K2&#47;K2TT5S242&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;K2TT5S242' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;K2&#47;K2TT5S242&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1568425440091');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='720px';vizElement.style.height='987px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        <br>
-        <h3>[Put Reflection Report Title Here]</h3>
-        [Discuss your findings/lessons/processes here]
+            <hr>
+            <div class='tableauPlaceholder' id='viz1570149339020' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hw&#47;hw2_15701453249650&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='hw2_15701453249650&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hw&#47;hw2_15701453249650&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1570149339020');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1427px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>            
+        </div>
+
+    <div class="pimg3">
+                <div class="ptext">
+                    <span class="border">
+                        Reflection
+                    </span>
+                </div>
+    </div>
+
+    <section class="section section-dark">
+            <h2> Data Selection</h2>
+            <br>
+            <p>
+                Having had experience working with datasets before I knew what I wanted to look for. Since I've also 
+                worked with business analytics, I found the dataset setting a familiar tone and cleaning the data 
+                was probably the easiest thing to do since I have a solid grasp on Python. I only combined all levels 
+                of basic education (high school at most) into one column called 'basic', and I also replaced all instances
+                of the 'pdays' column that had 999 with 0. This was because while it is supposed to describe the last time the bank
+                contacted the customer, it would make more neutral sense to have that value be 0 instead of something as 
+                offsetting as the large number 999. The end result of the data facilitated my data visualization analysis. The following
+                cleaned dataset contains 10 columns of numerical data and 11 columns of categorical data.
+
+            
+            </p>
+            <br>
+            <img id= "dataset" src="img/img4.png">
+            <a href="http://archive.ics.uci.edu/ml/datasets/Bank+Marketing">Link to dataset page</a> </bf>
+            <br>
+            <br>
+            <h2>Exploration</h2>
+            <br>
+            <p>I really enjoyed manipulating Tableau in order to achieve insightful graphs. One visualization was a bit 
+                too simplistic and did not really give one enough to think about. It was based on whether the marital
+                relationship of indiviudals mattered. I also used the 'Y' ("yes" indicated he/she is a subscriber to the bank) to 
+                check if married couples could prove a useful visualization. However, I then thought it would be better to do 
+                something where for example I check on how often people would take loans and compared that with their age, which
+                surely, as can be seen above in the dashboard, produces results with more information. So, anyways one can see the
+                 decent attempt at visualizing the data below. 
+            </p>
+            <br>
+            <img id="marital" src="img/img5.png" style="max-height: 700px; max-width: 1000px;">
+            <br>
+            <br>
+            <h2>Explanation</h2>
+            <br>
+            <p>I actually wanted to combine both the story structure on the Euribor Rate graph and then mesh that into a 
+                dashboard alongside the rest of the graphs. However, I could not figure out how to do that so I instead opted out 
+                for having nice symmetry (with color) with both the scatterplot and bar graphs on the right. I believed this was the much
+                better option because it created stability and beauty into the design. In addition, I think it is worth discussing 
+                my favorite graphs to avoid confusion. The scatterplot implies higher subscription with less than 5 calls as the data portrays
+                the more dense "yes" area ocurring below the constant 5 line. The Euribor rate is akin to the Libor (London
+                Interbank Rate) and is the rate at which banks in Europe lend to each other. The Euribor
+                rate is also similar in effect to the Federal Funds Rate in America but is computed differently. Evidently, the annotations
+                in the graph tell the rest of the story. Lastly, as the bar graph on the right has been taking data over the same time period,
+                the percentage of people who said "yes" compared to "no" is analogous to describing the rate of growth. It is highly important therefore
+                to understand that students could be a major source of clientele in the future. It is also worth noting that the ordering of the 
+                elements in the legend plays a huge part in displaying data. Below, one can see the drastic effects on clarity it can have by emphasizing 
+                "no" over "yes".
+            </p>
+            <br>
+            <img id="oopsie" src= "img/img6.png" style="max-height: 700px; max-width: 1000px;">
+    </section>
+
+    <div class="pimg1">
+            <div class="ptext">
+                <span class="border">
+                     Created by:
+                    Andrés Rivera
+                </span>
+            </div>
     </div>
 
 </body>
